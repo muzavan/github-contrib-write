@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	folderFlag := flag.String("folder", "./gen", "Folder where generated file/commits stored")
+	folderFlag := flag.String("folder", "./gen", "Folder where generated file/commits stored. Make sure the folder are already created")
 	dateFlag := flag.String("date", time.Now().Format(util.DateFormat), "Current date in yyyy-mm-dd format using now as default")
 	nameFlag := flag.String("name", "Gen Bot", "Name of the committer")
 	emailFlag := flag.String("email", "genbot@genbot.com", "Email of the committer")

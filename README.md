@@ -4,7 +4,7 @@ Do you want to write something in your github contribution panel?
 
 Now, you can write it with this cli.
 
-[example.png]
+![](img/hi-love.png)
 
 ## Build
 ```bash
@@ -27,5 +27,8 @@ Usage of ./main:
         Name of the committer (default "Gen Bot")
   -textFile string
 ```
+
+## Notes
+The example of the generated content can be checked out [here](github.com/muzavan/github-contrib-write-gen).
 
 Feedback and pull requests are much appreciated!

@@ -1,13 +1,13 @@
 package util
 
 import (
-	"fmt"
 	"time"
 )
 
 const (
 	panelHeight = 7  // start from Sunday
 	panelWidth  = 52 // Ignoring current week
+	DateFormat  = "2006-01-02"
 )
 
 // DateToPanel will return X, Y (0,0 is top-left)
@@ -21,9 +21,6 @@ func DateToPanel(currDate, inputDate time.Time) (int, int) {
 
 	diff := currSunday.Sub(inputSunday)
 	diffInWeek := (int(diff.Hours()) / 24) / panelHeight
-
-	fmt.Printf("%v", diffInWeek)
-	fmt.Println()
 
 	x := panelWidth - diffInWeek
 	return x, int(y)

@@ -26,6 +26,7 @@ Usage of ./main:
   -name string
         Name of the committer (default "Gen Bot")
   -textFile string
+        Path to file with 1s to define your github contrib panel style (default "file.txt")
 ```
 
 ## Notes
